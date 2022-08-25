@@ -10,16 +10,7 @@ public class Empresa {
         this.telefono = telefono;
         this.NIT = NIT;
     }
-
-    public void Leer(){
-
-    }
-
-    public void Modificar(){
-
-    }
-
-
+    
     public String getNombre() {
         return nombre;
     }
