@@ -5,5 +5,9 @@ public class Main {
         // Leer nombre
         System.out.println(objEmpresa.getNombre());
 
+        Empleado objEmpleado = new Empleado("Juana", "juana@gmail.com", "Ruta N", "Programadora");
+        System.out.println("El nombre del empleado es: " + objEmpleado.getNombreEmpleado());
+        objEmpleado.setRolEmpleado("Analista");
+        System.out.println("Actualización Rol Empleado: " + objEmpleado.getRolEmpleado());
     }
 }

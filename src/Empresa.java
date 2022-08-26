@@ -4,6 +4,7 @@ public class Empresa {
     private String telefono;
     private String NIT;
 
+
     public Empresa(String nombre, String direccion, String telefono, String NIT) {
         this.nombre = nombre;
         this.direccion = direccion;
