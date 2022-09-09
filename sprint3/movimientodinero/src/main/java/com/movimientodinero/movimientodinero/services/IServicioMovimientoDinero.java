@@ -9,6 +9,6 @@ public interface IServicioMovimientoDinero {
     //patch
     public abstract movimientoDinero update(long id, movimientoDinero movimientoDinero);
     //delete
-    public boolean delete(long id);
+    public void delete(long id);
 
 }

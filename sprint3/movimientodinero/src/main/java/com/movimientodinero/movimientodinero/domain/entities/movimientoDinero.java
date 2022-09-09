@@ -24,7 +24,7 @@ public class movimientoDinero {
     @JoinColumn(name = "empresa_id")
     private Empresa empresa;
 
-    //contructor
+    //constructor
     public movimientoDinero() {}
     public movimientoDinero(long id, String concepto, float monto, Date createdAt, Date updateAt, Empleado usuario) {
         this.id = id;
