@@ -13,28 +13,28 @@ public class MovimientoDineroControlador {
     IServicioMovimientoDinero servicioMovimientoDinero;
 
     //Get
-    @RequestMapping(value = "{id}", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "{id}/movements", method = RequestMethod.GET, produces = "application/json")
     @ResponseBody
 
     public movimientoDinero findById(@PathVariable long id){
         return servicioMovimientoDinero.getByID(id);
     }
     //Post
-    @RequestMapping(value = "{id}", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "{id}/movements", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
 
     public movimientoDinero create(@RequestBody movimientoDinero movdin){
         return servicioMovimientoDinero.create(movdin);
     }
     //Patch
-    @RequestMapping(value = "{id}", method = RequestMethod.PATCH, produces = "application/json")
+    @RequestMapping(value = "{id}/movements", method = RequestMethod.PATCH, produces = "application/json")
     @ResponseBody
 
     public movimientoDinero update(@PathVariable long id, @RequestBody movimientoDinero movdin){
         return servicioMovimientoDinero.update(id, movdin);
     }
     //Delete
-    @RequestMapping(value = "{id}", method = RequestMethod.DELETE, produces = "application/json")
+    @RequestMapping(value = "{id}/movements", method = RequestMethod.DELETE, produces = "application/json")
     @ResponseBody
     @ResponseStatus(HttpStatus.NO_CONTENT)
 
